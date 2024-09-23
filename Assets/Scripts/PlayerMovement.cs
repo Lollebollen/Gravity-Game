@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Cached variables")]
     [SerializeField] Rigidbody2D rb2D;
-
+    [SerializeField] Collider2D hitBox;
+    
     [Header("Movement")]
     [SerializeField] float acceleration;
     [SerializeField] float maxSpeed;
@@ -14,18 +15,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     float velocity;
 
-    [Header("Gravity flip")]
-    [SerializeField] float gravityScale;
-    Vector2 gravityDirection;
-
     // private variables
     float playerOfset;
+    float gravityScale;
+    Vector2 gravityDirection;
 
     private void Awake()
     {
         if (gravityScale == 0) { gravityScale = Physics2D.gravity.y; }
         gravityDirection = Vector2.up;
-        playerOfset = -GetComponent<Collider2D>().bounds.extents.y;
+        playerOfset = -hitBox.bounds.extents.y;
     }
 
     private void Update()
