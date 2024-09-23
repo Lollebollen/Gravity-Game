@@ -6,8 +6,15 @@ public class Switch : MonoBehaviour
 {
     [SerializeField] GameObject door;
     [SerializeField] float interactRange;
+    [SerializeField] Sprite[] sprites;
+    SpriteRenderer spriteRenderer;
+    int curretSprite = 0;
 
     Transform player;
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();    
+    }
 
     private void Update()
     {
@@ -34,6 +41,13 @@ public class Switch : MonoBehaviour
     {
         if (door == null) { return; }
         door.SetActive(!door.activeSelf);
+        int length = sprites.Length;
+        if (length > 0)
+        {
+            if (curretSprite + 1 >= length) { curretSprite = 0; }
+            else { curretSprite++; }
+            spriteRenderer.sprite = sprites[curretSprite];
+        }
     }
 
     private void OnDrawGizmos()
