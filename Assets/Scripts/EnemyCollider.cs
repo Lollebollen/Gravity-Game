@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class EnemyCollider : MonoBehaviour
+{
+
+    [SerializeField] Collider2D enemyCollider;
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            Destroy(player);
+
+        }
+    }
+}
