@@ -14,7 +14,7 @@ public class EnemyCollider : MonoBehaviour
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             Destroy(player);
-
+            
         }
     }
 }

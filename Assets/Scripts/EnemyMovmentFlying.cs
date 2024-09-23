@@ -24,7 +24,6 @@ public class EnemyMovmentFlying : MonoBehaviour
         rb.velocity = velocity;
     }
 
-    // Update is called once per frame
     void Update()
     {
        rb.velocity = velocity;
@@ -34,6 +33,6 @@ public class EnemyMovmentFlying : MonoBehaviour
         var speed = velocity.magnitude;
         Vector2 direction =  Vector2.Reflect(velocity.normalized, coll.contacts[0].normal);
        
-       velocity = direction * MathF.Max(speed, 0f);
+        velocity = direction * MathF.Max(speed, 0f);
     }
 }
