@@ -11,7 +11,6 @@ public class EnemyMovmentFlying : MonoBehaviour
 
    [SerializeField] SpriteRenderer spriteRenderer;
 
-   private bool isFacingRight = true;
     void Start()
     {
         while (x==0)
@@ -41,15 +40,13 @@ public class EnemyMovmentFlying : MonoBehaviour
 
     private void Flip()
     {
-        if (rb.velocity.x < 0 && isFacingRight == true)
+        if (rb.velocity.x < 0 )
         {
-            spriteRenderer.flipX = true;
-            isFacingRight = !isFacingRight;
+            spriteRenderer.flipX = true;    
         }
-        if (rb.velocity.x > 0 && isFacingRight == false)
+        if (rb.velocity.x > 0 )
         {    
             spriteRenderer.flipX=false;
-            isFacingRight = !isFacingRight;
         }
     }
 
