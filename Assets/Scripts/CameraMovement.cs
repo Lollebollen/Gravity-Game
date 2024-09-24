@@ -6,7 +6,7 @@ public class CameraMovement : MonoBehaviour
 {
     [SerializeField, Range(2,25)] int decayConstant;
     public Vector3 targetPos = Vector3.zero;
-    Camera
+
     private float Lerp(float a, float b, int decay, float dt)
     {
         return b + (a - b) * Mathf.Exp(-decay * dt);

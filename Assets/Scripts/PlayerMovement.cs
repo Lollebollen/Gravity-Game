@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float deceleration;
     [SerializeField] LayerMask groundMask;
     float velocity;
-    bool decelrate;
+    bool decelrate = false;
 
     [Header("Deathrattle")]
     [SerializeField] float deathSpin;
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     // private variables
     float playerOfset;
+    float colliderofset;
     float gravityScale;
     Vector2 gravityDirection;
 
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if (gravityScale == 0) { gravityScale = Physics2D.gravity.y; }
         gravityDirection = Vector2.up;
         playerOfset = -hitBox.bounds.extents.y;
+        colliderofset = hitBox.offset.y;
     }
 
     private void Update()
@@ -43,15 +45,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (decelrate)
         {
-            velocity *= deceleration;
+            Vector2 vel = rb2D.velocity;
+            rb2D.velocity = new Vector2(vel.x * deceleration, vel.y);
         }
     }
 
     private bool GroundCheck()
     {
         Vector2 playerPos = transform.position;
-        //Debug.DrawRay(new Vector2(playerPos.x, playerPos.y + (playerOfset * gravityDirection.y)), -gravityDirection * 0.1f, Color.red);
-        return Physics2D.Raycast(new Vector2(playerPos.x, playerPos.y + (playerOfset * gravityDirection.y)), -gravityDirection, 0.01f, groundMask);
+        //Debug.DrawRay(new Vector2(playerPos.x, (playerPos.y + colliderofset) + (playerOfset * gravityDirection.y)), -gravityDirection * 0.1f, Color.red);
+        return Physics2D.Raycast(new Vector2(playerPos.x, (playerPos.y + colliderofset) + (playerOfset * gravityDirection.y)), -gravityDirection, 0.01f, groundMask);
     }
 
     private void Move(bool groundCheck)
@@ -65,11 +68,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (direction == 0 && groundCheck)
         {
-            decelrate = false;
+            decelrate = true;
         }
         else
         {
-            decelrate = true;
+            decelrate = false;
         }
         velocity += direction * acceleration * Time.deltaTime;
         velocity = Mathf.Clamp(velocity, -maxSpeed, maxSpeed);
