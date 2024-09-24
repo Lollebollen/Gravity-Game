@@ -47,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
     private void Move(bool groundCheck)
     {
         int direction = (int)Input.GetAxisRaw("Horizontal");
+        velocity = rb2D.velocity.x;
         // dir = -1 true
         // dir  = 1 false
 
@@ -56,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (direction != 0 && (direction < 0 == velocity > 0))
         {
-            Debug.Log(direction);
             velocity *= deceleration;
             Debug.Log("First");
         }
