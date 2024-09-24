@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 
@@ -9,6 +10,8 @@ public class EnemyMovment : MonoBehaviour
      SpriteRenderer spriteRenderer;
 
     private float gravity = -2;
+
+    
 
 
     void Start()
@@ -36,11 +39,11 @@ public class EnemyMovment : MonoBehaviour
     {
         if (rb.velocity.x < 0)
         {
-            spriteRenderer.flipX = true;
+           spriteRenderer.flipX = false;
         }
         if (rb.velocity.x > 0)
         {    
-            spriteRenderer.flipX=false;
+            spriteRenderer.flipX=true;
         }
     }
 }
