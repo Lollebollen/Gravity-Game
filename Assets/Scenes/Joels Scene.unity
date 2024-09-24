@@ -535,7 +535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57bd1016f6f17e8438daac87e1b926f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 0}
+  decayConstant: 2
+  targetPos: {x: 0, y: 0, z: 0}
 --- !u!1 &611623884
 GameObject:
   m_ObjectHideFlags: 0

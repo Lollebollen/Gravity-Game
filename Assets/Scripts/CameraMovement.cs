@@ -2,16 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamereMovement : MonoBehaviour
+public class CameraMovement : MonoBehaviour
 {
     [SerializeField, Range(2,25)] int decayConstant;
-    [SerializeField] Vector3 targetPos = Vector3.zero;
-
-    public void CameraMoveTo(Vector3 targetPos)
-    {
-        this.targetPos = targetPos;
-    }
-
+    public Vector3 targetPos = Vector3.zero;
+    Camera
     private float Lerp(float a, float b, int decay, float dt)
     {
         return b + (a - b) * Mathf.Exp(-decay * dt);
