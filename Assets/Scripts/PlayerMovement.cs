@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     float velocity;
 
+    [Header("Deathrattle")]
+    [SerializeField] float deathSpin;
+    [SerializeField] float deathJump;
+
     // private variables
     float playerOfset;
     float gravityScale;
@@ -36,21 +40,30 @@ public class PlayerMovement : MonoBehaviour
     private bool GroundCheck()
     {
         Vector2 playerPos = transform.position;
-        return Physics2D.Raycast(new Vector2(playerPos.x, playerPos.y + (playerOfset * gravityDirection.y)), -gravityDirection, 0.01f, groundMask);
         //Debug.DrawRay(new Vector2(playerPos.x, playerPos.y + (playerOfset * gravityDirection.y)), -gravityDirection * 0.1f, Color.red);
+        return Physics2D.Raycast(new Vector2(playerPos.x, playerPos.y + (playerOfset * gravityDirection.y)), -gravityDirection, 0.01f, groundMask);
     }
 
     private void Move(bool groundCheck)
     {
         int direction = (int)Input.GetAxisRaw("Horizontal");
+        // dir = -1 true
+        // dir  = 1 false
+
+        //velocity = -1 false
+        //Velocity = 1 true
+
 
         if (direction != 0 && (direction < 0 == velocity > 0))
         {
+            Debug.Log(direction);
             velocity *= deceleration;
+            Debug.Log("First");
         }
         else if (direction == 0 && groundCheck)
         {
             velocity *= deceleration;
+            Debug.Log("Secound");
         }
         velocity += direction * acceleration * Time.deltaTime;
         velocity = Mathf.Clamp(velocity, -maxSpeed, maxSpeed);
@@ -65,5 +78,13 @@ public class PlayerMovement : MonoBehaviour
             gravityDirection = -gravityDirection;
             Physics2D.gravity = gravityDirection * gravityScale;
         }
+    }
+
+    public void Death()
+    {
+        rb2D.AddForce(gravityDirection * deathJump);
+        rb2D.freezeRotation = false;
+        rb2D.angularVelocity = deathSpin;
+        this.enabled = false;
     }
 }
