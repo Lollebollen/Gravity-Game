@@ -16,6 +16,7 @@ public class GameMenu : MonoBehaviour
         if (gameOverImage == null || gameOverText == null) { return; }
         gameOverImage.enabled = true;
         gameOverText.text = "Game Over";
+        StartCoroutine(Restart());
     }
 
     public void ChangeScene(int scene)
@@ -29,11 +30,10 @@ public class GameMenu : MonoBehaviour
         Application.Quit();
     }
 
-    IEnumerator restart()
+    IEnumerator Restart()
     {
         yield return new WaitForSecondsRealtime(restartTime);
         var currentScene = SceneManager.GetActiveScene();
-        Debug.Log(currentScene);
-        SceneManager.LoadScene(currentScene.name);
+        ChangeScene(currentScene.buildIndex);
     }
 }
