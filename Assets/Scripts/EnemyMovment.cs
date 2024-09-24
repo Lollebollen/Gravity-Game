@@ -14,6 +14,8 @@ public class EnemyMovment : MonoBehaviour
 
     private bool isFacingRight = true;
 
+    private float gravity = -2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,7 @@ public class EnemyMovment : MonoBehaviour
     void Update()
     {
 
-        rb.velocity = new Vector2(x*enemyMoveSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(x*enemyMoveSpeed, gravity);
 
         Flip();
 

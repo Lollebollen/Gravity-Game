@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovmentFlying : MonoBehaviour
@@ -10,6 +8,10 @@ public class EnemyMovmentFlying : MonoBehaviour
     float speed = 3;
     Vector2 velocity;
    [SerializeField] Rigidbody2D rb;
+
+   [SerializeField] SpriteRenderer spriteRenderer;
+
+   private bool isFacingRight = true;
     void Start()
     {
         while (x==0)
@@ -27,6 +29,7 @@ public class EnemyMovmentFlying : MonoBehaviour
     void Update()
     {
        rb.velocity = velocity;
+       Flip();
     }
     private void OnCollisionEnter2D(Collision2D coll)
     {
@@ -35,4 +38,19 @@ public class EnemyMovmentFlying : MonoBehaviour
        
         velocity = direction * MathF.Max(speed, 0f);
     }
+
+    private void Flip()
+    {
+        if (rb.velocity.x < 0 && isFacingRight == true)
+        {
+            spriteRenderer.flipX = true;
+            isFacingRight = !isFacingRight;
+        }
+        if (rb.velocity.x > 0 && isFacingRight == false)
+        {    
+            spriteRenderer.flipX=false;
+            isFacingRight = !isFacingRight;
+        }
+    }
+
 }
