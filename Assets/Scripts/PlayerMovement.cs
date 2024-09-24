@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Cached variables")]
     [SerializeField] Rigidbody2D rb2D;
     [SerializeField] Collider2D hitBox;
+    [SerializeField] SpriteRenderer spriteRenderer;
     
     [Header("Movement")]
     [SerializeField] float acceleration;
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float deceleration;
     [SerializeField] LayerMask groundMask;
     float velocity;
+    bool decelrate;
 
     [Header("Deathrattle")]
     [SerializeField] float deathSpin;
@@ -34,7 +36,15 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         Move(GroundCheck());
-        Flip();
+        FlipGRavity();
+    }
+
+    private void FixedUpdate()
+    {
+        if (decelrate)
+        {
+            velocity *= deceleration;
+        }
     }
 
     private bool GroundCheck()
@@ -48,35 +58,45 @@ public class PlayerMovement : MonoBehaviour
     {
         int direction = (int)Input.GetAxisRaw("Horizontal");
         velocity = rb2D.velocity.x;
-        // dir = -1 true
-        // dir  = 1 false
-
-        //velocity = -1 false
-        //Velocity = 1 true
-
 
         if (direction != 0 && (direction < 0 == velocity > 0))
         {
-            velocity *= deceleration;
-            Debug.Log("First");
+            decelrate = true;
         }
         else if (direction == 0 && groundCheck)
         {
-            velocity *= deceleration;
-            Debug.Log("Secound");
+            decelrate = false;
+        }
+        else
+        {
+            decelrate = true;
         }
         velocity += direction * acceleration * Time.deltaTime;
         velocity = Mathf.Clamp(velocity, -maxSpeed, maxSpeed);
 
         rb2D.velocity = new Vector2(velocity, rb2D.velocity.y);
+
+        Flip(direction);
     }
 
-    private void Flip()
+    private void FlipGRavity()
     {
         if (Input.GetButtonDown("Jump"))
         {
             gravityDirection = -gravityDirection;
             Physics2D.gravity = gravityDirection * gravityScale;
+        }
+    }
+
+    private void Flip(int dir)
+    {
+        if (dir < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        if (dir > 0)
+        {
+            spriteRenderer.flipX = false;
         }
     }
 
