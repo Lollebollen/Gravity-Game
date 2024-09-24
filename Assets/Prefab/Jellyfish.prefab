@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9137297710976851060}
   - component: {fileID: 4762574604170301312}
   - component: {fileID: 432809057056913731}
+  - component: {fileID: 5389550674607388163}
   m_Layer: 7
   m_Name: Jellyfish
   m_TagString: Untagged
@@ -177,3 +178,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0034515858, y: -0.006988287}
   m_Size: {x: 0.86425734, y: 2.5741777}
   m_Direction: 0
+--- !u!95 &5389550674607388163
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023698699536967557}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 64663e2429e29d44b990d2a59be22ece, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
