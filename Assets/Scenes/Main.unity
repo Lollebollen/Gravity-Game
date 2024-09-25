@@ -318,20 +318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decayConstant: 1
   targetPos: {x: 0, y: 0, z: 0}
-  paralaxObjects:
-  - {fileID: 874286862}
-  - {fileID: 308495672}
-  - {fileID: 999565966}
-  - {fileID: 517684966}
-  - {fileID: 67219442}
-  - {fileID: 205719740}
-  paralaxAmount:
-  - 0.05
-  - 0.1
-  - 0.15
-  - 0.05
-  - 0.02
-  - 0.015
+  parallaxObjects: []
+  parallaxAmount: []
 --- !u!1 &205719739
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,24 +3563,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5343966522551578814, guid: 72378ca66ecbc24409f44fc8af4e9f5d, type: 3}
-      propertyPath: m_Size.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5343966522551578814, guid: 72378ca66ecbc24409f44fc8af4e9f5d, type: 3}
-      propertyPath: m_Size.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5343966522551578814, guid: 72378ca66ecbc24409f44fc8af4e9f5d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 2123239291, guid: df0923c60d5bf07408f908ebd59a6c63, type: 3}
-    - target: {fileID: 5343966522551578814, guid: 72378ca66ecbc24409f44fc8af4e9f5d, type: 3}
       propertyPath: m_SortingOrder
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5343966522551578814, guid: 72378ca66ecbc24409f44fc8af4e9f5d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6248136068089061201, guid: 72378ca66ecbc24409f44fc8af4e9f5d, type: 3}
       propertyPath: m_Name
