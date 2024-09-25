@@ -8,22 +8,21 @@ using UnityEngine.UIElements;
 
 public class CameraToRoom : MonoBehaviour
 {
-CameraMovement cameraMovement;
-Vector3 pos;
+    CameraMovement cameraMovement;
+    Vector3 pos;
 
-
-private void Awake()
-{
-    pos = transform.position;
-    cameraMovement= Camera.main.GetComponent<CameraMovement>();
-}
-private void OnTriggerEnter2D(Collider2D other)
-{
-    if (other.gameObject.tag == "Player")
+    private void Awake()
     {
-        cameraMovement.targetPos = pos;
+        pos = transform.position;
+        cameraMovement= Camera.main.GetComponent<CameraMovement>();
     }
-}
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            cameraMovement.targetPos = pos;
+        }
+    }
 
 
 }

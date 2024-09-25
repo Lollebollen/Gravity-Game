@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
         rb2D.velocity = new Vector2(velocity, rb2D.velocity.y);
 
-        Flip(direction);
+        FlipX(direction);
     }
 
     private void FlipGRavity()
@@ -88,18 +88,31 @@ public class PlayerMovement : MonoBehaviour
         {
             gravityDirection = -gravityDirection;
             Physics2D.gravity = gravityDirection * gravityScale;
+            FlipY((int)gravityDirection.y);
         }
     }
 
-    private void Flip(int dir)
+    private void FlipX(int dir)
     {
         if (dir < 0)
         {
             spriteRenderer.flipX = true;
         }
-        if (dir > 0)
+        else if (dir > 0)
         {
             spriteRenderer.flipX = false;
+        }
+    }
+
+    private void FlipY(int dir)
+    {
+        if (dir < 0)
+        {
+            spriteRenderer.flipY = true;
+        }
+        else if (dir > 0)
+        {
+            spriteRenderer.flipY = false;
         }
     }
 

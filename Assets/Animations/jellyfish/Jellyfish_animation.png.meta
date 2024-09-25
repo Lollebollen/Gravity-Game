@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05c8c3f0348efff44a737ca7ceff6af9
+guid: 25e94f9c672256e40999f34b1eb4d2ce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slug Blue animation_0
+      name: Jellyfish_animation_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 18
-        width: 64
-        height: 24
+        x: 9
+        y: 11
+        width: 24
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c8d1089aa4439042bf6f2974f58f82f
-      internalID: -1295373223
+      spriteID: 28d275b970baba346ba44c4511044d96
+      internalID: 1326738194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slug Blue animation_1
+      name: Jellyfish_animation_1
       rect:
         serializedVersion: 2
-        x: 129
-        y: 18
-        width: 64
-        height: 24
+        x: 59
+        y: 11
+        width: 24
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9831518690fa2c4aa17ba8aa3d1da65
-      internalID: -580360824
+      spriteID: c9b792ae2baf93c48aede72390c1aaf2
+      internalID: 56577951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slug Blue animation_2
+      name: Jellyfish_animation_2
       rect:
         serializedVersion: 2
-        x: 237
-        y: 18
-        width: 64
-        height: 24
+        x: 109
+        y: 11
+        width: 24
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e707a3afa0f3be4ab3508367405a783
-      internalID: -2048680499
+      spriteID: 13db1e358b8e47543a8b408e086f25f7
+      internalID: 1599822010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slug Blue animation_3
+      name: Jellyfish_animation_3
       rect:
         serializedVersion: 2
-        x: 345
-        y: 18
-        width: 64
-        height: 24
+        x: 159
+        y: 11
+        width: 24
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d9b2303b437acd46b8248223539b8a6
-      internalID: 1242144638
+      spriteID: ef3a8dc908d3be94197b973fe7544dd6
+      internalID: -361972403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jellyfish_animation_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 11
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4fd3264ee5cd147ba1053f8c232818
+      internalID: -1888493772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jellyfish_animation_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 11
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4779c8561ddfaa349b6517c4905ccf30
+      internalID: -1584131871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jellyfish_animation_6
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 11
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140e3b4116ee473489bcce11b1b135b8
+      internalID: -144610865
       vertices: []
       indices: 
       edges: []
@@ -191,10 +254,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Slug Blue animation_0: -1295373223
-      Slug Blue animation_1: -580360824
-      Slug Blue animation_2: -2048680499
-      Slug Blue animation_3: 1242144638
+      Jellyfish_animation_0: 1326738194
+      Jellyfish_animation_1: 56577951
+      Jellyfish_animation_2: 1599822010
+      Jellyfish_animation_3: -361972403
+      Jellyfish_animation_4: -1888493772
+      Jellyfish_animation_5: -1584131871
+      Jellyfish_animation_6: -144610865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

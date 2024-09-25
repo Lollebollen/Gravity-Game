@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05c8c3f0348efff44a737ca7ceff6af9
+guid: d491b8b94617c1442a01cb04dcec01c3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,11 +97,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slug Blue animation_0
+      name: Slug Purple animation_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 18
+        x: 11
+        y: 16
         width: 64
         height: 24
       alignment: 0
@@ -111,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c8d1089aa4439042bf6f2974f58f82f
-      internalID: -1295373223
+      spriteID: 7ff6cd9843923da41b89a7bed5d6eebe
+      internalID: 503719495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slug Blue animation_1
+      name: Slug Purple animation_1
       rect:
         serializedVersion: 2
-        x: 129
-        y: 18
+        x: 89
+        y: 16
         width: 64
         height: 24
       alignment: 0
@@ -132,18 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9831518690fa2c4aa17ba8aa3d1da65
-      internalID: -580360824
+      spriteID: 1f129fa5948be0f4d846c5232beb4f79
+      internalID: 1666797543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slug Blue animation_2
+      name: Slug Purple animation_2
       rect:
         serializedVersion: 2
-        x: 237
-        y: 18
+        x: 167
+        y: 16
         width: 64
         height: 24
       alignment: 0
@@ -153,18 +153,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e707a3afa0f3be4ab3508367405a783
-      internalID: -2048680499
+      spriteID: 8a2b771feb0e26d45881dec077a7b7e8
+      internalID: 560390664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slug Blue animation_3
+      name: Slug Purple animation_3
       rect:
         serializedVersion: 2
-        x: 345
-        y: 18
+        x: 245
+        y: 16
         width: 64
         height: 24
       alignment: 0
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d9b2303b437acd46b8248223539b8a6
-      internalID: 1242144638
+      spriteID: 247f824b580d65d43aa6a2208a50a9bd
+      internalID: 1218980888
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Slug Blue animation_0: -1295373223
-      Slug Blue animation_1: -580360824
-      Slug Blue animation_2: -2048680499
-      Slug Blue animation_3: 1242144638
+      Slug Purple animation_0: 503719495
+      Slug Purple animation_1: 1666797543
+      Slug Purple animation_2: 560390664
+      Slug Purple animation_3: 1218980888
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
