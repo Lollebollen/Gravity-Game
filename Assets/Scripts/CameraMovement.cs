@@ -4,17 +4,33 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    [SerializeField, Range(2,25)] int decayConstant;
+    [Header("Movement")]
+    [SerializeField, Range(1, 25), Tooltip("Larger number = faster lerp")] int decayConstant;
     public Vector3 targetPos = Vector3.zero;
 
-    private float Lerp(float a, float b, int decay, float dt)
-    {
-        return b + (a - b) * Mathf.Exp(-decay * dt);
-    }
+    [Header("Parallax")]
+    [SerializeField] Transform[] parallaxObjects;
+    [SerializeField] float[] parallaxAmount;
+    Vector3 posLastFrame;    
 
     private void Update()
     {
         float dt = Time.deltaTime;
-        transform.position = new Vector3(Lerp(transform.position.x, targetPos.x, decayConstant, dt), Lerp(transform.position.y, targetPos.y, decayConstant, dt), transform.position.z);
+        Vector3 newPos = new Vector3(Lerp(transform.position.x, targetPos.x, decayConstant, dt), Lerp(transform.position.y, targetPos.y, decayConstant, dt), transform.position.z);
+        transform.position = newPos;
+        if (posLastFrame != null)
+        {
+            Vector3 movement = posLastFrame - newPos;
+            for(int i = 0; i < parallaxObjects.Length; i++)
+            {
+                parallaxObjects[i].position += movement * parallaxAmount[i];
+            }
+        }
+        posLastFrame = newPos;
+    }
+
+    private float Lerp(float a, float b, int decay, float dt)
+    {
+        return b + (a - b) * Mathf.Exp(-decay * dt);
     }
 }
