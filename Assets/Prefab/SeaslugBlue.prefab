@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   rb: {fileID: 6638227885010258141}
+  isGroundEnemy: 1
 --- !u!50 &6638227885010258141
 Rigidbody2D:
   serializedVersion: 4

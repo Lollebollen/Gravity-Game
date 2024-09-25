@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b49cc333258064445a4e689d88e1870b, type: 2}
+    - target: {fileID: 6763272863558852153, guid: 0ea1d2d49ce726c4fb744ae0468d2365, type: 3}
+      propertyPath: isGroundEnemy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8932826718696752853, guid: 0ea1d2d49ce726c4fb744ae0468d2365, type: 3}
       propertyPath: m_Name
       value: SeaslugBlue (1) Variant
