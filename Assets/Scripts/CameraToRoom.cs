@@ -20,7 +20,7 @@ public class CameraToRoom : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            cameraMovement.targetPos = pos;
+            cameraMovement.roomPos = pos;
         }
     }
 
