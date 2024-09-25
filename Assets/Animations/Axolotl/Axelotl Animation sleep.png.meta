@@ -100,10 +100,10 @@ TextureImporter:
       name: Axelotl Animation sleep_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 3
-        width: 109
-        height: 100
+        x: 11
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: Axelotl Animation sleep_1
       rect:
         serializedVersion: 2
-        x: 137
-        y: 3
-        width: 109
-        height: 100
+        x: 135
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +142,10 @@ TextureImporter:
       name: Axelotl Animation sleep_2
       rect:
         serializedVersion: 2
-        x: 261
-        y: 3
-        width: 109
-        height: 100
+        x: 259
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: Axelotl Animation sleep_3
       rect:
         serializedVersion: 2
-        x: 385
-        y: 3
-        width: 109
-        height: 100
+        x: 383
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: Axelotl Animation sleep_4
       rect:
         serializedVersion: 2
-        x: 509
-        y: 3
-        width: 109
-        height: 100
+        x: 507
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: Axelotl Animation sleep_5
       rect:
         serializedVersion: 2
-        x: 633
-        y: 3
-        width: 109
-        height: 100
+        x: 631
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: Axelotl Animation sleep_6
       rect:
         serializedVersion: 2
-        x: 757
-        y: 3
-        width: 109
-        height: 100
+        x: 755
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: Axelotl Animation sleep_7
       rect:
         serializedVersion: 2
-        x: 881
-        y: 3
-        width: 109
-        height: 100
+        x: 879
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: Axelotl Animation sleep_8
       rect:
         serializedVersion: 2
-        x: 1005
-        y: 3
-        width: 109
-        height: 100
+        x: 1003
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: Axelotl Animation sleep_9
       rect:
         serializedVersion: 2
-        x: 1129
-        y: 3
-        width: 109
-        height: 100
+        x: 1127
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: Axelotl Animation sleep_10
       rect:
         serializedVersion: 2
-        x: 1253
-        y: 3
-        width: 109
-        height: 100
+        x: 1251
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: Axelotl Animation sleep_11
       rect:
         serializedVersion: 2
-        x: 1377
-        y: 3
-        width: 109
-        height: 100
+        x: 1375
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: Axelotl Animation sleep_12
       rect:
         serializedVersion: 2
-        x: 1501
-        y: 3
-        width: 109
-        height: 100
+        x: 1499
+        y: 4
+        width: 110
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

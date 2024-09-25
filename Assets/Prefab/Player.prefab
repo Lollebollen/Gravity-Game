@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1700419661123337509}
   - component: {fileID: 2944867820328075723}
   - component: {fileID: 5382212467682920543}
+  - component: {fileID: 9088662015306294970}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -172,3 +173,24 @@ MonoBehaviour:
     m_Bits: 64
   deathSpin: 200
   deathJump: 100
+--- !u!95 &9088662015306294970
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6248136068089061201}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb3608288f03b1d428cfe36a808f43b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
