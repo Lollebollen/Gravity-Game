@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField, Range(1, 25), Tooltip("Larger number = faster lerp")] int decayConstant;
     [SerializeField, Range(0, 1), Tooltip("Where the camra should be inbetween the room and the player")] float middlePosBetween; 
-    [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] Transform player;
     public Vector3 roomPos = Vector3.zero;
 
     [Header("Parallax")]
@@ -17,7 +17,7 @@ public class CameraMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector3 targetPos = (playerMovement.transform.position - roomPos) * middlePosBetween + roomPos;
+        Vector3 targetPos = (player.position - roomPos) * middlePosBetween + roomPos;
         float dt = Time.deltaTime;
         Vector3 newPos = new Vector3(Lerp(transform.position.x, targetPos.x, decayConstant, dt), Lerp(transform.position.y, targetPos.y, decayConstant, dt), transform.position.z);
         transform.position = newPos;
