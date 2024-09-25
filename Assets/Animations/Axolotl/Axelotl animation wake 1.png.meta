@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a33014b3c533d9d4fbb806ee71906d0f
+guid: d57735dac422c5140801d036e7a3d1d8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,10 +100,10 @@ TextureImporter:
       name: Axelotl animation wake_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 4
-        width: 97
-        height: 95
+        x: 7
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: Axelotl animation wake_1
       rect:
         serializedVersion: 2
-        x: 143
-        y: 4
-        width: 97
-        height: 95
+        x: 128
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +142,10 @@ TextureImporter:
       name: Axelotl animation wake_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 4
-        width: 97
-        height: 95
+        x: 249
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: Axelotl animation wake_3
       rect:
         serializedVersion: 2
-        x: 385
-        y: 4
-        width: 97
-        height: 95
+        x: 370
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: Axelotl animation wake_4
       rect:
         serializedVersion: 2
-        x: 506
-        y: 4
-        width: 97
-        height: 95
+        x: 491
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: Axelotl animation wake_5
       rect:
         serializedVersion: 2
-        x: 627
-        y: 4
-        width: 97
-        height: 95
+        x: 612
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: Axelotl animation wake_6
       rect:
         serializedVersion: 2
-        x: 748
-        y: 4
-        width: 97
-        height: 95
+        x: 733
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: Axelotl animation wake_7
       rect:
         serializedVersion: 2
-        x: 869
-        y: 4
-        width: 97
-        height: 95
+        x: 854
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: Axelotl animation wake_8
       rect:
         serializedVersion: 2
-        x: 990
-        y: 4
-        width: 97
-        height: 95
+        x: 975
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: Axelotl animation wake_9
       rect:
         serializedVersion: 2
-        x: 1111
-        y: 4
-        width: 97
-        height: 95
+        x: 1096
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: Axelotl animation wake_10
       rect:
         serializedVersion: 2
-        x: 1232
-        y: 4
-        width: 97
-        height: 95
+        x: 1217
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: Axelotl animation wake_11
       rect:
         serializedVersion: 2
-        x: 1353
-        y: 4
-        width: 97
-        height: 95
+        x: 1338
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: Axelotl animation wake_12
       rect:
         serializedVersion: 2
-        x: 1474
-        y: 4
-        width: 97
-        height: 95
+        x: 1459
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: Axelotl animation wake_13
       rect:
         serializedVersion: 2
-        x: 1595
-        y: 4
-        width: 97
-        height: 95
+        x: 1580
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +394,10 @@ TextureImporter:
       name: Axelotl animation wake_14
       rect:
         serializedVersion: 2
-        x: 1716
-        y: 4
-        width: 97
-        height: 95
+        x: 1701
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +415,10 @@ TextureImporter:
       name: Axelotl animation wake_15
       rect:
         serializedVersion: 2
-        x: 1837
-        y: 4
-        width: 97
-        height: 95
+        x: 1822
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +436,10 @@ TextureImporter:
       name: Axelotl animation wake_16
       rect:
         serializedVersion: 2
-        x: 1958
-        y: 4
-        width: 97
-        height: 95
+        x: 1943
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: Axelotl animation wake_17
       rect:
         serializedVersion: 2
-        x: 2079
-        y: 4
-        width: 97
-        height: 95
+        x: 2064
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: Axelotl animation wake_18
       rect:
         serializedVersion: 2
-        x: 2200
-        y: 4
-        width: 97
-        height: 95
+        x: 2185
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +499,10 @@ TextureImporter:
       name: Axelotl animation wake_19
       rect:
         serializedVersion: 2
-        x: 2321
-        y: 4
-        width: 97
-        height: 95
+        x: 2306
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,10 +520,10 @@ TextureImporter:
       name: Axelotl animation wake_20
       rect:
         serializedVersion: 2
-        x: 2442
-        y: 4
-        width: 97
-        height: 95
+        x: 2427
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,10 +541,10 @@ TextureImporter:
       name: Axelotl animation wake_21
       rect:
         serializedVersion: 2
-        x: 2563
-        y: 4
-        width: 97
-        height: 95
+        x: 2548
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +562,10 @@ TextureImporter:
       name: Axelotl animation wake_22
       rect:
         serializedVersion: 2
-        x: 2684
-        y: 4
-        width: 97
-        height: 95
+        x: 2669
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,8 +573,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5706233fdf79743a03633520904618
-      internalID: 1357604811
+      spriteID: 7c21b0765a549354d9c9d39c59378c08
+      internalID: 174087018
       vertices: []
       indices: 
       edges: []
@@ -583,10 +583,10 @@ TextureImporter:
       name: Axelotl animation wake_23
       rect:
         serializedVersion: 2
-        x: 2805
-        y: 4
-        width: 97
-        height: 95
+        x: 2790
+        y: 7
+        width: 110
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,8 +594,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3507adc5b541793419d189756101c24a
-      internalID: -1959312097
+      spriteID: 366b350c7d3d39c468e76db340f4b33d
+      internalID: -331017830
       vertices: []
       indices: 
       edges: []
@@ -626,8 +626,8 @@ TextureImporter:
       Axelotl animation wake_2: -837319105
       Axelotl animation wake_20: 1580450613
       Axelotl animation wake_21: 342909573
-      Axelotl animation wake_22: 1357604811
-      Axelotl animation wake_23: -1959312097
+      Axelotl animation wake_22: 174087018
+      Axelotl animation wake_23: -331017830
       Axelotl animation wake_3: 2061847202
       Axelotl animation wake_4: 930199586
       Axelotl animation wake_5: 7283690
