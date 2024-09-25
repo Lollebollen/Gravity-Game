@@ -22,6 +22,7 @@ public class EnemyCollider : MonoBehaviour
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<PlayerMovement>().Death();
 
+            if (gameMenu == null) { return; }
             gameMenu.GameOverMessage();
         }
     }

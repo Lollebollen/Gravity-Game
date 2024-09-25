@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22330975fc7678e4090a86e4cfa1c301
+guid: d9e8967b7b41d9946b641dd94d89d658
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,127 +97,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Astronaut animation_0
+      name: Tiles_Erika_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 10
-        width: 24
-        height: 48
+        x: 17
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee634398440782848b4205fa11f6058c
-      internalID: 2123239291
+      spriteID: be0ee67fa45d863459f31e6b5213f4b6
+      internalID: -1749092799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut animation_1
+      name: Tiles_Erika_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 10
-        width: 24
-        height: 48
+        x: 34
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb497c37c1f165438744e5b03a92ed1
-      internalID: -825079066
+      spriteID: 8f32ef9542bd8244495ce65063ff1bba
+      internalID: -2009589746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut animation_2
+      name: Tiles_Erika_2
       rect:
         serializedVersion: 2
-        x: 113
-        y: 10
-        width: 24
-        height: 48
+        x: 0
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7446e9767efbdcc4693ed6e60c53ce94
-      internalID: 1156080210
+      spriteID: 1fdf34d02153138428ddf7882ac989aa
+      internalID: -541470897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut animation_3
+      name: Tiles_Erika_3
       rect:
         serializedVersion: 2
-        x: 163
-        y: 10
-        width: 24
-        height: 48
+        x: 17
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d22cce0dc16e5774dba0c141e5b4c6f8
-      internalID: -1797700190
+      spriteID: c83dc73b912334648962c03e0c7d0cf1
+      internalID: 1251807941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut animation_4
+      name: Tiles_Erika_4
       rect:
         serializedVersion: 2
-        x: 214
-        y: 10
-        width: 24
-        height: 48
+        x: 34
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cde50bc3d14d5394a9d0f8af736f23f3
-      internalID: 1789554828
+      spriteID: 7ed80a353498ccf47b3993f838484cc5
+      internalID: -754226464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut animation_5
+      name: Tiles_Erika_5
       rect:
         serializedVersion: 2
-        x: 263
-        y: 10
-        width: 24
-        height: 48
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96ffab7a4245a514ca0868794e586cc7
-      internalID: 50229689
+      spriteID: 45420c03457adfb45b99f6bcf8078f89
+      internalID: 981665838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Erika_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63de87f7fb4169d4491dce7cb383f0bb
+      internalID: 1551664894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_Erika_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c255c04875317fd4d9c1b5360289e4a5
+      internalID: -602354710
       vertices: []
       indices: 
       edges: []
@@ -233,12 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Astronaut animation_0: 2123239291
-      Astronaut animation_1: -825079066
-      Astronaut animation_2: 1156080210
-      Astronaut animation_3: -1797700190
-      Astronaut animation_4: 1789554828
-      Astronaut animation_5: 50229689
+      Tiles_Erika_0: -1749092799
+      Tiles_Erika_1: -2009589746
+      Tiles_Erika_2: -541470897
+      Tiles_Erika_3: 1251807941
+      Tiles_Erika_4: -754226464
+      Tiles_Erika_5: 981665838
+      Tiles_Erika_6: 1551664894
+      Tiles_Erika_7: -602354710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
