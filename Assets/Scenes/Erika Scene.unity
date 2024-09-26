@@ -5932,6 +5932,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5476897748257939585, guid: 2ee295594af3b764786d7d0bc06bf385, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 29ad97ffdd6d9d740bd0e0cc167643c0, type: 3}
     - target: {fileID: 6012303687999531783, guid: 2ee295594af3b764786d7d0bc06bf385, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2924058
