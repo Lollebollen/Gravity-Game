@@ -171,6 +171,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  maxGravitySpeed: 10
   deathSpin: 200
   deathJump: 100
 --- !u!95 &9088662015306294970
