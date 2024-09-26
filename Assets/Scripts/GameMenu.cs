@@ -9,14 +9,31 @@ public class GameMenu : MonoBehaviour
 {
     [SerializeField] Image gameOverImage;
     [SerializeField] TMP_Text gameOverText;
+    [SerializeField] string gameOverMessage = "Game Over";
+    [SerializeField] Canvas TooltipCanvas;
+    [SerializeField] float tooltipTurnOfTime = 10;
 
     [SerializeField] float restartTime = 2;
     [SerializeField] float toWinTime = 1;
+
+    private void Start()
+    {
+        Invoke(nameof(TurnOfToolTip), tooltipTurnOfTime);
+    }
+
+    private void TurnOfToolTip()
+    {
+        if (TooltipCanvas != null)
+        {
+            TooltipCanvas.enabled = false;
+        }
+    }
+
     public void GameOverMessage()
     {
         if (gameOverImage == null || gameOverText == null) { return; }
         gameOverImage.enabled = true;
-        gameOverText.text = "Game Over";
+        gameOverText.text = gameOverMessage;
         StartCoroutine(Restart());
     }
 
@@ -34,7 +51,7 @@ public class GameMenu : MonoBehaviour
     public void Win()
     {
         //play sound or effetcs
-        Invoke(nameof(ChangeScene), toWinTime);
+        StartCoroutine(WinCorutine());
     }
 
     IEnumerator Restart()
@@ -42,5 +59,11 @@ public class GameMenu : MonoBehaviour
         yield return new WaitForSecondsRealtime(restartTime);
         var currentScene = SceneManager.GetActiveScene();
         ChangeScene(currentScene.buildIndex);
+    }
+
+    IEnumerator WinCorutine()
+    {
+        yield return new WaitForSecondsRealtime(toWinTime);
+        ChangeScene(2);
     }
 }
