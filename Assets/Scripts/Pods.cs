@@ -12,7 +12,7 @@ public class Pods : MonoBehaviour
     private void Awake()
     {
         player = FindAnyObjectByType<PlayerMovement>().transform;
-        gameMenu = GetComponent<GameMenu>();
+        gameMenu = FindAnyObjectByType<GameMenu>();
     }
 
     private void Update()
