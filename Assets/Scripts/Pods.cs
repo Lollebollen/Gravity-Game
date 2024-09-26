@@ -42,6 +42,7 @@ public class Pods : MonoBehaviour
                 return;
             }
             over = true;
+            player.GetComponent<PlayerMovement>().ResetGravity();
             AudioSource.Play();
             gameMenu.Win();
         }
