@@ -7,7 +7,7 @@ public class EnemyCollider : MonoBehaviour
 {
 
     [SerializeField] Collider2D enemyCollider;
-    [SerializeField] AudioClip hitSound;
+    [SerializeField] AudioSource hitSource;
 
     GameMenu gameMenu;
 
@@ -20,6 +20,7 @@ public class EnemyCollider : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            hitSource.Play();
             GameObject player = other.gameObject; //GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<PlayerMovement>().Death();
 

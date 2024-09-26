@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
             Quit();
         }
 
-        if (Input.GetKeyUp(KeyCode.Return))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             ChangeScene(1);
         }
