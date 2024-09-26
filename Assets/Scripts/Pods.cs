@@ -8,16 +8,23 @@ public class Pods : MonoBehaviour
     
     Transform player;
     GameMenu gameMenu;
+    AudioSource AudioSource;
+
+    bool over = false;
 
     private void Awake()
     {
         player = FindAnyObjectByType<PlayerMovement>().transform;
         gameMenu = FindAnyObjectByType<GameMenu>();
+        AudioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        Interact();   
+        if (!over)
+        {
+            Interact();
+        }
     }
 
     private void Interact()
@@ -34,6 +41,8 @@ public class Pods : MonoBehaviour
                 Debug.Log("GameMenu not found");
                 return;
             }
+            over = true;
+            AudioSource.Play();
             gameMenu.Win();
         }
     }

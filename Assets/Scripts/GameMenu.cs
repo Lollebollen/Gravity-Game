@@ -12,6 +12,7 @@ public class GameMenu : MonoBehaviour
     [SerializeField] string gameOverMessage = "Game Over";
     [SerializeField] Canvas TooltipCanvas;
     [SerializeField] float tooltipTurnOfTime = 10;
+    [SerializeField] Animator animator;
 
     [SerializeField] float restartTime = 2;
     [SerializeField] float toWinTime = 1;
@@ -63,6 +64,7 @@ public class GameMenu : MonoBehaviour
 
     IEnumerator WinCorutine()
     {
+        animator.SetBool("FadeOut", true);
         yield return new WaitForSecondsRealtime(toWinTime);
         ChangeScene(2);
     }
