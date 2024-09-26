@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody2D rb2D;
     [SerializeField] Collider2D hitBox;
     [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] AudioSource audioSource;
     
     [Header("Movement")]
     [SerializeField] float acceleration;
@@ -87,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
+            audioSource.Play();
             gravityDirection = -gravityDirection;
             Physics2D.gravity = gravityDirection * gravityScale;
             FlipY((int)gravityDirection.y);
