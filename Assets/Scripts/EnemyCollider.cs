@@ -7,6 +7,7 @@ public class EnemyCollider : MonoBehaviour
 {
 
     [SerializeField] Collider2D enemyCollider;
+    [SerializeField] AudioClip hitSound;
 
     GameMenu gameMenu;
 

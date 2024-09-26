@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float maxSpeed;
     [SerializeField] float deceleration;
     [SerializeField] LayerMask groundMask;
+    [SerializeField] float maxGravitySpeed;
     float velocity;
     bool decelrate = false;
 
@@ -77,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         velocity += direction * acceleration * Time.deltaTime;
         velocity = Mathf.Clamp(velocity, -maxSpeed, maxSpeed);
 
-        rb2D.velocity = new Vector2(velocity, rb2D.velocity.y);
+        rb2D.velocity = new Vector2(velocity, Mathf.Clamp(rb2D.velocity.y, -maxGravitySpeed, maxGravitySpeed));
 
         FlipX(direction);
     }
