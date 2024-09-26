@@ -20,6 +20,15 @@ public class GameMenu : MonoBehaviour
     private void Start()
     {
         Invoke(nameof(TurnOfToolTip), tooltipTurnOfTime);
+        Cursor.visible = false;;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            Quit();
+        }
     }
 
     private void TurnOfToolTip()
