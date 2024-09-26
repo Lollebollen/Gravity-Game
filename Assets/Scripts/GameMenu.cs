@@ -10,7 +10,8 @@ public class GameMenu : MonoBehaviour
     [SerializeField] Image gameOverImage;
     [SerializeField] TMP_Text gameOverText;
 
-    [SerializeField] float restartTime;
+    [SerializeField] float restartTime = 2;
+    [SerializeField] float toWinTime = 1;
     public void GameOverMessage()
     {
         if (gameOverImage == null || gameOverText == null) { return; }
@@ -28,6 +29,12 @@ public class GameMenu : MonoBehaviour
     {
         Debug.Log("Quit was called");
         Application.Quit();
+    }
+
+    public void Win()
+    {
+        //play sound or effetcs
+        Invoke(nameof(ChangeScene), toWinTime);
     }
 
     IEnumerator Restart()
