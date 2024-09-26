@@ -23,10 +23,9 @@ public class EnemyMovment : MonoBehaviour
         }
         while(x ==0)
         {
-            x = Random.Range(-1,1);   
+            x = Random.Range(-1,2);   
         } 
     }
-
 
     void Update()
     {

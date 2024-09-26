@@ -5,7 +5,7 @@ public class EnemyMovmentFlying : MonoBehaviour
 {
     int x=0;
     int y=0;
-    float speed = 3;
+    [SerializeField] float speed = 3;
     Vector2 velocity;
    [SerializeField] Rigidbody2D rb;
 
@@ -15,11 +15,11 @@ public class EnemyMovmentFlying : MonoBehaviour
     {
         while (x==0)
         {
-            x = UnityEngine.Random.Range(-1,1);
+            x = UnityEngine.Random.Range(-1,2);
         }
         while (y==0)
         {
-            y = UnityEngine.Random.Range(-1,1);
+            y = UnityEngine.Random.Range(-1,2);
         }
         velocity = new Vector2 (speed*x, speed*y);
         rb.velocity = velocity;

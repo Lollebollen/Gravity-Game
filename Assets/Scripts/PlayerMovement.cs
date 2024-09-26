@@ -121,6 +121,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void Death()
     {
+        spriteRenderer.flipY = false;
+        gravityDirection = Vector2.up;
+        Physics2D.gravity = gravityDirection * gravityScale;
         rb2D.AddForce(gravityDirection * deathJump);
         rb2D.freezeRotation = false;
         rb2D.angularVelocity = deathSpin;
