@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4805174031023246586}
   - component: {fileID: 7384274107449884581}
   - component: {fileID: 7205233128374015107}
-  - component: {fileID: 4891084444095272877}
   m_Layer: 0
   m_Name: Axelotl Animation sleep_0 (3)
   m_TagString: Untagged
@@ -202,16 +201,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87667a66fd9db4440aa615d15d27bc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4891084444095272877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7150820731697834552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f765df9bb3b525a4bb939c616d5d46b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyCollider: {fileID: 7384274107449884581}
