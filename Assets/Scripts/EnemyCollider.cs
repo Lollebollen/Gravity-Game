@@ -19,7 +19,7 @@ public class EnemyCollider : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            GameObject player = other.gameObject; //GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<PlayerMovement>().Death();
 
             if (gameMenu == null) { return; }
