@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3233300402436300961}
   - component: {fileID: 6763272863558852153}
   - component: {fileID: 6638227885010258141}
-  - component: {fileID: 3656460308031527999}
   - component: {fileID: 6108712222448154703}
+  - component: {fileID: 8746623440580864895}
   m_Layer: 7
   m_Name: SeaslugBlue
   m_TagString: Untagged
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f765df9bb3b525a4bb939c616d5d46b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCollider: {fileID: 3656460308031527999}
+  enemyCollider: {fileID: 8746623440580864895}
 --- !u!114 &6763272863558852153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,8 +144,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &3656460308031527999
-BoxCollider2D:
+--- !u!95 &6108712222448154703
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932826718696752853}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb297fb041f719e46809e7e0e39ce700, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!60 &8746623440580864895
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,7 +197,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.30272517}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -186,27 +207,15 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.95, y: 0.93466794}
-  m_EdgeRadius: 0
---- !u!95 &6108712222448154703
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8932826718696752853}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb297fb041f719e46809e7e0e39ce700, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.765339, y: 0.5804793}
+      - {x: -1.1430808, y: -0.07199967}
+      - {x: -1.2321612, y: -0.4100655}
+      - {x: -1.0283226, y: -0.69062614}
+      - {x: 1.3359531, y: -0.7496046}
+      - {x: 1.0813805, y: -0.25869083}
+      - {x: 0.2351712, y: -0.25641507}
+      - {x: -0.3318319, y: 0.1589018}
+      - {x: -0.17245962, y: 0.55320275}
+  m_UseDelaunayMesh: 0
